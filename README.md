@@ -1,12 +1,17 @@
-# 🌐 Web Page Generator - By Furqan
+# 🔥 Hamza Web Page Generator
 
-Create your own HTML/CSS/JS web pages and get a live hosted link instantly!  
-Hosted on **Heroku**, works in **Termux**, **VSCode**, and more.
+Create and host your own HTML/CSS/JS web pages with live links — powered by **Node.js** and **Express**.
 
----
+<p align="center">
+  <img src="https://i.ibb.co/Vcp3gdCN/67de846c2ade9.jpg" alt="Hamza Web Logo" width="250"/>
+</p>
+
+<br>
+
+## 🚀 Deploy on Heroku
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/furqan19024/Hamza-web)
-
+<br>
 ---
 
 ## 🚀 Features
@@ -19,4 +24,4 @@ Hosted on **Heroku**, works in **Termux**, **VSCode**, and more.
 
 ---
 
-## 📁 Folder Structure
+
