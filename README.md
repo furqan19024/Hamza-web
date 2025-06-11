@@ -19,10 +19,11 @@ Welcome to Hamza Web, a simple Node.js-based app where users can submit their ow
 
 Deploy this app on your favorite platforms instantly:
 
-🚀 Heroku
+## 🚀 Deploy on Heroku
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/furqan19024/Hamza-web)
 
-
+<br>
 🌍 Railway
 
 
