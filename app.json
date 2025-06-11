@@ -1,0 +1,23 @@
+{
+  "name": "Hamza Web Page Generator",
+  "description": "Generate HTML/CSS/JS web pages with live link. Made by Furqan.",
+  "repository": "https://github.com/furqan19024/Hamza-web",
+  "logo": "https://i.ibb.co/Vcp3gdCN/67de846c2ade9.jpg",
+  "keywords": ["node", "express", "website", "html", "generator", "hamza", "furqan"],
+  "env": {},
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo ✅ Hamza Web successfully deployed!"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/nodejs"
+}
