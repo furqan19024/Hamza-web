@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make Your Web Page</title>
+</head>
+<body>
+    <h1>Create Your Own Page</h1>
+    <form id="genForm">
+        <label>Page Name:</label><br>
+        <input type="text" name="filename" required><br><br>
+
+        <label>Paste HTML/CSS/JS Code:</label><br>
+        <textarea name="htmlcode" rows="10" cols="60" required></textarea><br><br>
+
+        <button type="submit">Generate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('genForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const data = {
+                filename: formData.get('filename'),
+                htmlcode: formData.get('htmlcode')
+            };
+
+            const res = await fetch('/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await res.text();
+            document.getElementById('result').innerHTML = result;
+        });
+    </script>
+</body>
+</html>
